@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <input type="text" id="inp2">
+    <button id="btn">Submit</button>
+
+<script>
+
+    // document.getElementById("btn").onclick=function()
+    // {
+    //     let a= document.getElementById("inp").value;
+    //     console.log("hello"+" "+a)
+    // }
+
+    // document.getElementById("btn").onclick=function()
+    // {
+    //     let a= Number(document.getElementById("inp").value);
+    //     let b= Number(document.getElementById("inp2").value);
+    //     console.log(a+b)
+    // }
+
+    
+        // var i=0;
+        // while(i<=100)
+        // {
+        //     console.log(i)
+        //     i++;
+        // }
+        
+
+        // let n= prompt("enter a number");
+        // var i=0;
+        // while(i<=n)
+        // { 
+        //     if(i==((n/2)+1))
+        //     {
+        //         break;
+        //     }
+        //     else
+        //     {
+        //     console.log(i)
+        //     }
+        //     i++;
+        // }
+        
+    //     document.getElementById("btn").onclick=function()
+    // {
+    //     let n= Number(document.getElementById("inp").value);
+    //     var i=0;
+    //     while(i<=n)
+    //     { 
+    //         if(i==n/2)
+    //         {
+    //             i++;
+    //         }
+    //         else
+    //         {
+    //         console.log(i)
+    //         i++;
+    //         } 
+    //     }
+    // }
+
+        // let n= prompt("enter a number");
+        // var i=1;
+        // while(i<=n)
+        // { 
+        //     if(i%i==0 && i%n==0)
+        //     {   
+        //         console.log(i +" "+"prime")
+        //     }
+        //     else
+        //     {
+        //         console.log(i +" "+"not prime")
+        //     } 
+        //     i++
+        // }
+
+
+        document.getElementById("btn").onclick=function()
+    {
+        let n= Number(document.getElementById("inp").value);
+        var count=0;
+            if(n>=1) 
+            {
+                ++count;
+            }
+            while(n/10>=1)
+            {
+                n/=10;
+                ++count;
+            }
+            console.log(count)     
+    }
+    
+        
+        
+
+    </script>
+</body>
+</html>
