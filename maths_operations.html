@@ -7,9 +7,63 @@
 </head>
 <body>
 
+    <input type="text" id="inp" class="input">
+    <input type="text" id="inp2" class="input2">
+    <select id="select" class="selectt">
+        <option value="" >none</option>
+        <option value="add">add +</option>
+        <option value="minus">minus -</option>
+        <option value="multiply">multiply *</option>
+        <option value="divide">divide /</option>
+        <option value="modulas">modulas %</option>
+    </select>
+    <button id="btn">Submit</button>
+    <h1 id="h1"></h1>
 
     
+    
     <script>
+        
+        
+    document.getElementById("select").onclick=function()
+    {
+        let a= Number(document.getElementById("inp").value);
+        let b= Number(document.getElementById("inp2").value);
+        let result=(document.getElementById("select").value);
+        if(result=="add")
+        {
+            document.getElementById("h1").innerHTML="The sum is"+" "+(a+b);
+            console.log(a+b)
+        }
+
+        else if(result=="minus")
+        {
+            document.getElementById("h1").innerHTML="The difference is"+" "+(a-b);
+            console.log(a-b)
+        }
+
+        if(result=="multiply")
+        {
+            document.getElementById("h1").innerHTML="The product is"+" "+(a*b);
+            console.log(a*b)
+        }
+
+        if(result=="divide")
+        {
+            document.getElementById("h1").innerHTML="The quotient is"+" "+(a/b);
+            console.log(a/b)
+        }
+
+        if(result=="modulas")
+        {
+            document.getElementById("h1").innerHTML="The remainder is"+" "+(a%b);
+            console.log(a%b)
+        }
+        
+        
+        }
+    
+    
 
     </script>
 </body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/* 3 types of function*/  
+
+/* naming function*/     
+    function add(a,b)
+    {
+        console.log(`add = ${a+b}`);
+    }
+    add(10,20);
+
+/* anonymous function*/   
+    (
+        ( function(a,b)
+    {
+        console.log(a+b);
+    }
+        )
+        (10,40)
+    );
+
+/* arrow function*/ 
+    (
+        (p,q)=>
+    {
+        console.log(p+q);
+    }
+    )
+    (100,300)
+    </script>
+</body>
+</html>
